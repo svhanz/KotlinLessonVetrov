@@ -1,4 +1,4 @@
-package lesson4
+package lesson4_boolean
 
 fun main() {
     val ageUser = 66

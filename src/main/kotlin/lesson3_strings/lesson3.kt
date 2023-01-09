@@ -1,4 +1,4 @@
-package lesson3
+package lesson3_strings
 
 fun main() {
     // Конкатенация строк

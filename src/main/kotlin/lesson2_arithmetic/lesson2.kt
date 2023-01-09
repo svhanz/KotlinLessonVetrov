@@ -1,4 +1,4 @@
-package lesson2
+package lesson2_arithmetic
 
 fun main() {
     val a = 5
