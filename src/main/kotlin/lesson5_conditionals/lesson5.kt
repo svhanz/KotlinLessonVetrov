@@ -20,6 +20,7 @@ fun conditionalIf() {
 }
 
 fun conditionalWhen(){
+    println("Введите какое-нибудь положительное целое число")
     val ageUser = readln().toInt()
     val outputResult = when(ageUser){
         10 -> "Пошел в жопу малолетка!"
