@@ -1,8 +1,10 @@
 package lesson7_for
 
 fun main() {
-    cycleFor()
-    rangeIn()
+    //cycleFor()
+    //rangeIn()
+    cycleForBreak()
+    cycleForContinue()
 }
 // диапазоны (интервалы)
 fun rangeIn(){
@@ -23,6 +25,36 @@ fun rangeIn(){
 // цикл for
 fun cycleFor(){
     for (i in 6 downTo  1) {
-        println("Это цикл №: $i")
+        println("Реклама закончится через: $i")
+        Thread.sleep(1000)
+
     }
 }
+
+// оператор break
+fun cycleForBreak() {
+    for (i in 10 downTo 1) {
+        if (i == 5) {
+            println("Пользователь нажал \"Пропустить\"")
+            break
+        }
+        println("Реклама закончится через: $i")
+        Thread.sleep(1000)
+    }
+    println("Цикл был прерван на пятой итерации")
+}
+
+
+// оператор continue
+fun cycleForContinue(){
+    for (i in 10 downTo 1){
+        if (i == 6){
+            println("Пользователь нажал \"Продолжить\"")
+            continue
+        }
+        println("Реклама закончится через $i")
+        Thread.sleep(1000)
+    }
+    println("Цикл был выполнен с пропуском шестой итерации")
+}
+
